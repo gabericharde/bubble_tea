@@ -1,0 +1,41 @@
+{
+    "name": "Bubble Tea",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "An extension to beautify and betterify bookmarks",
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_icon": {
+            "180": "icons/180x180.png"
+            
+        },
+        "default_title": "Bubble Tea",
+        "default_popup": "popup.html"
+    },
+
+    "commands": {
+        "bubble-tea-command": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+B",
+                "mac": "Command+Shift+B"
+            },
+            "description": "Bubble Tea Key Bind",
+            "global": true
+        }
+    },
+
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [{
+
+        "matches": ["http://*/*", "https://*/*"],
+        "css": ["css/bubbletea.css"],
+        "js": ["js/content.js"]
+    }],
+    "devtools_page": "devtools.html"
+}
