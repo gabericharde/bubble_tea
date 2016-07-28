@@ -21,8 +21,7 @@
                 "default": "Ctrl+Shift+B",
                 "mac": "Command+Shift+B"
             },
-            "description": "Bubble Tea Key Bind",
-            "global": true
+            "description": "Bubble Tea Key Bind"
         }
     },
 
