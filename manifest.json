@@ -4,7 +4,8 @@
     "manifest_version": 2,
     "description": "An extension to beautify and betterify bookmarks",
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "storage"
     ],
     "browser_action": {
         "default_icon": {
@@ -18,8 +19,8 @@
     "commands": {
         "bubble-tea-command": {
             "suggested_key": {
-                "default": "Ctrl+Shift+B",
-                "mac": "Command+Shift+B"
+                "default": "Ctrl+Shift+5",
+                "mac": "Command+Shift+5"
             },
             "description": "Bubble Tea Key Bind"
         }
@@ -33,7 +34,8 @@
 
         "matches": ["http://*/*", "https://*/*"],
         "css": ["css/bubbletea.css"],
-        "js": ["js/content.js"]
+        "js": ["js/content.js"],
+        "popup": ["js/popup.js"]
     }],
     "devtools_page": "devtools.html"
 }
