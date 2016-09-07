@@ -1,30 +1,93 @@
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+.dashboard {
+  padding-bottom: 5%;
 }
 
-.bubble-flex-item {
-  background: gray;
-  background-size: cover;
-  border-radius: 10px 40px 40px 40px;
-  padding: none;
-  width: 100px;
-  height: 75px;
-  margin-top: 15px;
-  line-height: 75px;
-  color: white;
+.dash-field {
+  text-align: left;
+  display: inline-block;
+  font-family: 'Hind', sans-serif;
+  border-radius: 3px 3px 3px 3px;
+  font-size: 1.5em;
   font-weight: bold;
-  font-size: 3em;
+  padding: 1% 2% 1% 2%;
+}
+
+.dash-button {
   text-align: center;
+  background: #e74c3c;
+  display: inline-block;
+  font-family: 'Hind', sans-serif;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 2% 5% 2% 5%;
+
+}
+
+.bubble-board{
+  padding: 2% 2% 0;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  font-size: 0;
+  background: #8e44ad;
+  width: 420px;
+}
+
+.bubble-board:after{
+  display: inline-block;
+  width: 100%;
+}
+
+.bubble-board .bubble-item:before{
+  display: inline-block;
+  padding-top: 60%;
+}
+
+.bubble-board .bubble-item,
+.bubble-board .gap{
+  display: inline-block;
+  width: 30%;
+}
+
+.bubble-board .bubble-item{
+  text-align: left;
+  background: #7f8c8d;
+  margin-bottom: 2%;
+}
+
+/*
+@media all and (min-width: 420px){
+  .bubble-board .bubble-item,
+  .bubble-board .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .bubble-board .bubble-item,
+  .bubble-board .gap{
+    width: 23.5%;
+  }
+}
+*/
+
+.bubble-item {
+  background: #7f8c8d;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  padding: none;
+  color: #ffffff;
+  /*
+  background-size: cover;
+  margin-top: 15px;
+  line-height: 50px;
+  */
 }
 
 .bubble-img {

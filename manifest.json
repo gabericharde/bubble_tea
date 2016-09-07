@@ -24,9 +24,8 @@
             "description": "Bubble Tea Key Bind"
         }
     },
-
     "background": {
-        "scripts": ["js/background.js"],
+        "scripts": ["js/eventPage.js"],
         "persistent": false
     },
 
