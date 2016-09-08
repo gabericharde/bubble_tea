@@ -4,8 +4,7 @@
     "manifest_version": 2,
     "description": "An extension to beautify and betterify bookmarks",
     "permissions": [
-        "activeTab",
-        "storage"
+        "activeTab"
     ],
     "browser_action": {
         "default_icon": {
@@ -35,7 +34,8 @@
         "matches": ["http://*/*", "https://*/*"],
         "css": ["css/bubbletea.css"],
         "js": ["js/content.js"],
-        "popup": ["js/popup.js"]
+        "popup": ["js/popup.js"],
+        "temp": ["./temp.js"]
     }],
     "devtools_page": "devtools.html"
 }
