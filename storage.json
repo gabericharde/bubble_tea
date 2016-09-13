@@ -1,9 +1,14 @@
 
-{ "archive": [ {
+{ "archive": {
   "dates_visited": ["12993188200751739"],
-  "id": "1",
   "name": "Torchlight II for PC Reviews, Ratings, Credits, and More - Metacritic",
-  "type": "url",
   "url": "http://www.metacritic.com/game/pc/torchlight-ii",
-  "meta_tags": [""]
+  "meta_tag": "game"
 },
+
+/*
+document.title
+window.location.toString() for full URL
+window.location.hostname gives domain
+document.querySelector("meta[property='og:type']").content meta tags
+*/

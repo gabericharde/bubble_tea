@@ -8,3 +8,9 @@ dashButton.addEventListener('mousedown', function() {
 }
 
 */
+
+function populatePopup(value) {
+  chrome.storage.local.get(bubble, function(value) {
+
+  });
+}
